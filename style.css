@@ -302,7 +302,7 @@ footer {
 =========================== */
 .players-hero {
     height: 40vh;
-    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("../images/stadium.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("stadium.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -322,7 +322,7 @@ footer {
    PLAYERS GRID
 =========================== */
 .players-section {
-    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("../images/stadium.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("stadium.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -831,3 +831,4 @@ table tr:hover {
     .fixtures-hero h2 { font-size: 28px; }
     .fixture-card p, .match-summary p, .match-details p { font-size: 12px; }
 }
+

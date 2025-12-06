@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Login</title>
+    <style>
+        body {
+            background: #000;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .login-box {
+            padding: 30px;
+            background: #111;
+            border-radius: 10px;
+            box-shadow: 0 0 10px red;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: crimson;
+            color: white;
+            border: none;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #ff0033;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-box">
+    <h2>Admin Login</h2>
+    <input type="password" id="password" placeholder="Enter Admin Password">
+    <button onclick="checkPassword()">Login</button>
+    <p id="error" style="color:red;"></p>
+</div>
+
+<script>
+    function checkPassword() {
+        const correctPassword = "ravisastri";  // CHANGE THIS!
+        const userPassword = document.getElementById("password").value;
+
+        if (userPassword === correctPassword) {
+            window.location.href = "admin.html";  // where admin panel is stored
+        } else {
+            document.getElementById("error").innerText = "Incorrect password!";
+        }
+    }
+</script>
+
+</body>
+</html>
